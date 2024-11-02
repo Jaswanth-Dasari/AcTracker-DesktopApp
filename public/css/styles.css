@@ -76,7 +76,7 @@ body {
 } */
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     .sidebar {
         width: 60px;
         padding: 10px;
@@ -101,7 +101,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .sidebar {
         width: 100%;
         height: auto;
@@ -121,7 +121,7 @@ body {
         padding: 15px;
         font-size: 14px;
     }
-}
+} */
 
 .dashboard-content {
     flex-grow:1;
@@ -652,9 +652,9 @@ h2 {
         font-size: 15px;
         padding: 5px 0px;
     }
-
 }
-@media (min-width: 768px) {
+
+@media (min-width: 680px) {
     .container {
         flex-direction: column;
     }
@@ -716,7 +716,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     .modal-content {
         width: 80%;
         padding: 15px;
@@ -980,8 +980,15 @@ tr:hover {
     color: var(--text-light);
 }
 
+
+@media (max-width:925px){
+    .flex-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
 /* Responsive Enhancements */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     .dashboard-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -1140,7 +1147,7 @@ tr:hover {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     .sidebar {
         width: var(--nav-collapsed-width);
     }
@@ -1171,53 +1178,3 @@ tr:hover {
     }
 }
 
-@media (max-width: 768px) {
-    .dashboard-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .flex-container {
-        flex-direction: column;
-    }
-    
-    .card, .graph-container, .screenshot-container {
-        margin-bottom: 15px;
-    }
-    
-    .floating-timer {
-        width: 90%;
-        left: 5%;
-        right: 5%;
-    }
-}
-@media (max-width: 768px) {
-    .sidebar {
-        width: var(--nav-collapsed-width);
-    }
-    
-    .sidebar .nav-item span {
-        display: none;
-    }
-    
-    .dashboard-content {
-        margin-left: var(--nav-collapsed-width);
-    }
-    
-    .nav-toggle {
-        display: none;
-    }
-    
-    .sidebar .logo h2 {
-        display: none;
-    }
-    
-    .nav-item {
-        justify-content: center;
-        padding: 12px 5px;
-    }
-    
-    .nav-item i {
-        margin-right: 0;
-    }
-}
